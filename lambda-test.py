@@ -88,8 +88,7 @@ def execute(event, WAITING_TIME, lambda_client, status):
 ## SNSへ通知
 sns = boto3.client('sns')
 
-def sns_notification_success:
-    print(event, context)
+def sns_notification_success():
     topic = 'arn:aws:sns:ap-northeast-1:040678122487:hirai-yamada-notification'
     subject = '検索結果'
     message = '対象ファイルがありました。'
@@ -102,8 +101,7 @@ def sns_notification_success:
         )
     return 'Success'
 
-def sns_notification_error:
-    print(event, context)
+def sns_notification_error():
     topic = 'arn:aws:sns:ap-northeast-1:040678122487:hirai-yamada-notification'
     subject = '検索結果'
     message = '対象ファイルがありませんでした。'
