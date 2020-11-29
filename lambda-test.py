@@ -7,7 +7,7 @@ from datetime import datetime, timedelta, timezone
 # データ確認用のバケット
 BUCKET = "hirai-yamada"
 # 存在を確認するファイル名
-FILE_NAME = "*.txt"
+FILE_NAME = "*.json"
 
 # ファイルが存在していない場合の待ち時間
 WAITING_TIME = 250
